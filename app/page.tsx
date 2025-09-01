@@ -1,97 +1,83 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-tinko-teal via-tinko-teal to-teal-600 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-tinko-teal via-teal-500 to-teal-600 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
-        {/* Orange circles */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-tinko-orange rounded-full opacity-80"></div>
-        <div className="absolute bottom-20 left-20 w-24 h-24 bg-tinko-orange rounded-full opacity-70"></div>
-        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-tinko-orange rounded-full opacity-60"></div>
+        {/* Orange circles - matching your design */}
+        <div className="absolute top-20 right-16 w-48 h-48 bg-tinko-orange rounded-full opacity-90"></div>
+        <div className="absolute bottom-32 left-16 w-32 h-32 bg-tinko-orange rounded-full opacity-80"></div>
+        <div className="absolute top-1/2 right-1/3 w-24 h-24 bg-tinko-orange rounded-full opacity-70"></div>
         
-        {/* Green accent circles */}
-        <div className="absolute top-1/3 left-10 w-20 h-20 bg-green-400 rounded-full opacity-50"></div>
-        <div className="absolute bottom-10 right-1/3 w-12 h-12 bg-green-400 rounded-full opacity-60"></div>
+        {/* Green accent elements */}
+        <div className="absolute top-1/4 left-12 w-28 h-28 bg-green-400 rounded-full opacity-60"></div>
+        <div className="absolute bottom-20 right-1/4 w-16 h-16 bg-green-400 rounded-full opacity-70"></div>
+        <div className="absolute bottom-1/2 left-1/2 w-12 h-12 bg-green-400 transform rotate-45 opacity-60"></div>
         
-        {/* Abstract shapes */}
-        <div className="absolute top-20 left-1/4 w-8 h-8 bg-yellow-300 transform rotate-45 opacity-70"></div>
-        <div className="absolute bottom-1/3 left-1/2 w-6 h-6 bg-purple-400 rounded-full opacity-60"></div>
+        {/* Purple/blue accents */}
+        <div className="absolute top-32 left-1/3 w-8 h-8 bg-purple-400 rounded-full opacity-80"></div>
+        <div className="absolute bottom-1/3 right-12 w-6 h-6 bg-blue-300 rounded-full opacity-70"></div>
         
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="w-full h-full" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3Ccircle cx='27' cy='7' r='2'/%3E%3Ccircle cx='47' cy='7' r='2'/%3E%3Ccircle cx='7' cy='27' r='2'/%3E%3Ccircle cx='27' cy='27' r='2'/%3E%3Ccircle cx='47' cy='27' r='2'/%3E%3Ccircle cx='7' cy='47' r='2'/%3E%3Ccircle cx='27' cy='47' r='2'/%3E%3Ccircle cx='47' cy='47' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}></div>
-        </div>
+        {/* Abstract line patterns - subtle */}
+        <div className="absolute top-10 left-1/4 w-32 h-1 bg-green-300 opacity-30 transform rotate-12"></div>
+        <div className="absolute top-16 left-1/4 w-24 h-1 bg-green-300 opacity-30 transform rotate-12"></div>
+        <div className="absolute top-22 left-1/4 w-16 h-1 bg-green-300 opacity-30 transform rotate-12"></div>
       </div>
       
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col justify-center min-h-screen">
-        {/* Coming Soon Text */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
+      <div className="relative z-10 container mx-auto px-4 py-12 flex flex-col justify-center min-h-screen text-center">
+        
+        {/* Coming Soon Header */}
+        <div className="mb-8">
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-2 tracking-widest">
             COMING SOON
           </h2>
-          <h3 className="text-xl md:text-2xl font-semibold text-white/90 mb-8">
+          <h3 className="text-xl md:text-2xl font-bold text-white/90 tracking-wide">
             TO YOUR TOWN
           </h3>
         </div>
 
-        {/* Logo Section with Shopping Bag */}
-        <div className="text-center mb-12 relative">
-          {/* Shopping bag icon */}
-          <div className="inline-block mb-6">
-            <div className="relative">
-              {/* Bag shape */}
-              <div className="w-32 h-40 bg-gradient-to-b from-purple-600 to-purple-800 rounded-t-3xl rounded-b-lg relative mx-auto">
-                {/* Bag handles */}
-                <div className="absolute -top-3 left-6 w-8 h-8 border-4 border-purple-600 rounded-full bg-transparent"></div>
-                <div className="absolute -top-3 right-6 w-8 h-8 border-4 border-purple-600 rounded-full bg-transparent"></div>
-                
-                {/* Tinko text overlay on bag */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white font-black text-2xl tracking-wider">
-                    ti
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Main Tinko Text */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tight">
+        {/* Main Tinko Logo Text - with rounded font styling */}
+        <div className="mb-8">
+          <h1 
+            className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-4 leading-none"
+            style={{
+              fontFamily: 'ui-rounded, "SF Pro Rounded", "Helvetica Neue", Arial, sans-serif',
+              letterSpacing: '-0.02em'
+            }}
+          >
             tinko
           </h1>
         </div>
 
         {/* Tagline */}
-        <div className="text-center mb-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-white tracking-wide">
+        <div className="mb-10">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wide">
             Find it. Get it. Tinko
           </h3>
         </div>
 
-        {/* Domain */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
-            <div className="w-8 h-8 bg-white/20 rounded-full mr-3 flex items-center justify-center">
-              <span className="text-white text-sm">🌐</span>
+        {/* Website Domain Badge */}
+        <div className="mb-12">
+          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30">
+            <div className="w-8 h-8 bg-teal-400/80 rounded-full mr-4 flex items-center justify-center">
+              <div className="w-4 h-4 bg-white rounded-full"></div>
             </div>
-            <span className="text-white font-semibold text-xl">
+            <span className="text-white font-bold text-2xl">
               tinko.in
             </span>
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="inline-block bg-gradient-to-r from-green-400 to-green-500 text-white font-bold text-xl md:text-2xl px-8 py-4 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-200 cursor-pointer">
+        {/* Call to Action Button */}
+        <div className="mb-8">
+          <button className="inline-block bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white font-black text-xl md:text-2xl px-12 py-5 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-3xl border-2 border-green-300">
             GET A SNEAK PEEK!
-          </div>
+          </button>
         </div>
 
-        {/* Bottom branding */}
+        {/* Bottom Right Tinko Branding */}
         <div className="absolute bottom-8 right-8">
-          <span className="text-white/60 font-light text-lg">
+          <span className="text-white/80 font-light text-2xl tracking-wide">
             tinko
           </span>
         </div>

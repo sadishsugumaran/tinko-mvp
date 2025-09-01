@@ -9,25 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        tinko: {
-          teal: '#009CA6',
-          orange: '#FF6F00',
-          white: '#FFFFFF',
-        },
-        primary: {
-          50: '#f0fdfe',
-          100: '#ccf7f9',
-          500: '#009CA6',
-          600: '#008a93',
-          700: '#007680',
-        },
-        secondary: {
-          50: '#fff8f1',
-          100: '#ffedd6',
-          500: '#FF6F00',
-          600: '#e66300',
-          700: '#cc5700',
-        }
+        // Exact Tinko brand colors from style guide
+        'tinko-teal': '#009CA6',
+        'tinko-purple': '#6A1B9A',
+        'tinko-pink': '#D81B60', 
+        'accent-green': '#9EDC6F',
+        'tinko-white': '#FFFFFF',
+        'tinko-charcoal': '#333333',
+      },
+      fontFamily: {
+        // Fallback to system fonts that are rounded
+        sans: ['ui-rounded', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
     },
   },
